@@ -19,16 +19,28 @@ describe('triangle', function() {
     expect(triangle(5,6,7)).to.equal("scalene");
   });
 
-  it ("returns not a triangle", function() {
+  it ("check for weird triangle, returns not a triangle", function() {
     expect(triangle(1,1,7)).to.equal("Not a triangle");
   });
 
-  it ("returns not a triangle", function() {
+  it ("check for weird triangle, returns not a triangle", function() {
     expect(triangle(1,7,1)).to.equal("Not a triangle");
   });
 
-  it ("returns not a triangle", function() {
+  it ("check for weird triangle, returns not a triangle", function() {
     expect(triangle(7,1,1)).to.equal("Not a triangle");
+  });
+
+  it ("check for 0, returns not a triangle", function() {
+    expect(triangle(0,1,1)).to.equal("Not a triangle");
+  });
+
+  it ("check for string, return not a triangle", function() {
+    expect(triangle("a",1,1)).to.equal("Not a triangle");
+  });
+
+  it ("check for string, return not a triangle", function() {
+    expect(triangle("a","fjskdl",1)).to.equal("Not a triangle");
   });
 
 

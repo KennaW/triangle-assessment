@@ -4,8 +4,13 @@ var triangle = function(a, b, c) {
   parseInt(b);
   parseInt(c);
 
+  console.log(a);
+
+  //Invalid triangle check
   //check that each side isn't more than the length of the other two
-  if (((a + b)<=c) || ((c + b) <= a) || ((a + c) <= b)){
+  //also checks if a side is 0 or less
+  //checks if user input was "string"
+  if ( ((a + b)<=c) || ((c + b) <= a) || ((a + c) <= b) || ((a || b || c) <= 0) || (typeof (a || b || c) === "string") ) {
     triangleType = "Not a triangle";
   }
 
