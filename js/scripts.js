@@ -11,22 +11,22 @@ var triangle = function(a, b, c) {
   //also checks if a side is 0 or less
   //checks if user input was "string"
   if ( ((a + b)<=c) || ((c + b) <= a) || ((a + c) <= b) || ((a || b || c) <= 0) || (typeof (a || b || c) === "string") ) {
-    triangleType = "Not a triangle";
+    triangleType = "NOT A TRIANGLE";
   }
 
   //equalateral
     else if ((a === b) && (b === c)){
-      triangleType = "equalateral";
+      triangleType = "EQUILATERAL";
     }
 
   //iscosceles
     else if (((a === b) && (b != c)) || ((a === c) && (b != c)) || ((b === c) && (a != b))) {
-      triangleType = "iscosceles";
+      triangleType = "ISOSCELES";
     }
 
   //scalene
     else{
-      triangleType = "scalene";
+      triangleType = "SCALENE";
     }
 
 
