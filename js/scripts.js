@@ -32,3 +32,21 @@ var triangle = function(a, b, c) {
 
   return triangleType;
 }
+
+$(document).ready(function() {
+  $("form#sides").submit(function(event){
+  var a = $("input#sideA").val();
+  var b = $("input#sideB").val();
+  var c = $("input#sideC").val();
+
+  var result = triangle(a,b,c);
+  debugger;
+  });
+
+});
+
+
+
+
+
+//.
