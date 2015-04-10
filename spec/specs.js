@@ -6,4 +6,9 @@ describe('traingle', function() {
   it ("returns isosceles", function() {
     expect(triangle(8,8,5)).to.equal("iscosceles");
   });
+
+  it ("returns isosceles", function() {
+    expect(triangle(8,5,8)).to.equal("iscosceles");
+  });
+
 });
